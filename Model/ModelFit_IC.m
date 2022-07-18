@@ -17,7 +17,7 @@ end
 addpath(genpath('/Users/caro/Documents/MATLAB/zipalldat/social_controllability_fMRI-master/2.model'));
 
 % Where to save the results
-saveName = 'Modelfit_IC';
+saveName = 'Modelfit_IC_results';
 
 %% Model setting
 Model = {'nRv_MF_t20_etaf'
