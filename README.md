@@ -27,7 +27,7 @@ Download and install [SPM12](https://www.fil.ion.ucl.ac.uk/spm/software/download
 * **"Mname"**: Eight labels (strings) corresponding to each column pair in "M"
     * The first column corresponds to the modified UG block ("controllable" condition) 
     * The second column corresponds to the typical UG block ("uncontrollable" condition) 
-* **"M"**: Behavioral measures for each participant, each row corresponds to a different participant in same order as "ID" 
+* **"M"**: Behavioral measures for each participant, each row corresponds to a different participant in the same order as "ID" 
     * 'offer': Mean offer across the trials 
     * 'rejR': Mean rejection rate
     * 'rejR_L': Mean rejection rate for low offers ($1-3)
@@ -43,8 +43,8 @@ Download and install [SPM12](https://www.fil.ion.ucl.ac.uk/spm/software/download
  
  2.2 Input nicotine smokers' behavioral data [smok_beh.mat](https://github.com/caromc03/Smoker-s-Forward-Thinking/blob/main/Data/smok_beh.mat) or matched non-smokers' behavioral data [nonsmok_beh.mat](https://github.com/caromc03/Smoker-s-Forward-Thinking/blob/main/Data/nonsmok_beh.mat) (line 2)
  
- 2.3 Update input and ouput directories (lines 17,20) and run the script. 
-    * Models are found in in [LikelihoodFunctions](https://github.com/caromc03/Smoker-s-Forward-Thinking/tree/main/Model/LikelihoodFunctions) folder  
+ 2.3 Update input and ouput directories (lines 17,20) and run the script.
+ * Models are found in in [LikelihoodFunctions](https://github.com/caromc03/Smoker-s-Forward-Thinking/tree/main/Model/LikelihoodFunctions) folder  
  
  2.4 "ModelFit_IC_results" will be generated with the following: 
 * **"Model"**: List of models used 
@@ -54,7 +54,7 @@ Download and install [SPM12](https://www.fil.ion.ucl.ac.uk/spm/software/download
     * f3= 2-step
     * f4= 3-step
     * f5= 4-step
-* TEST "BIC": BIC scores for each model 
+* **"BIC"**: BIC scores for each model 
     * Columns corresponds to listed models 
     * Rows correspond to each particiant		
 * **"freeName"**: Parameter names
@@ -67,7 +67,7 @@ Download and install [SPM12](https://www.fil.ion.ucl.ac.uk/spm/software/download
     * The 3rd dimension corresponds each model
             
 ## 3. Parameter Recovery and Accuracy 
-3.1 Open [recover_f3_IC](https://github.com/caromc03/Smoker-s-Forward-Thinking/blob/main/Model/Model%20Recovery/recover_MF_IC.m) for the 2-step model "controllable condition". Scripts for [other models](https://github.com/caromc03/Smoker-s-Forward-Thinking/tree/main/Model/Model%20Recovery) and the ["Uncontrollable"](https://github.com/caromc03/Smoker-s-Forward-Thinking/tree/main/Model/Model%20Recovery/Uncontrollable) condition are also available.  
+3.1 Open [recover_f3_IC](https://github.com/caromc03/Smoker-s-Forward-Thinking/blob/main/Model/Model%20Recovery/recover_MF_IC.m) for the 2-step model "controllable" condition. Scripts for [other models](https://github.com/caromc03/Smoker-s-Forward-Thinking/tree/main/Model/Model%20Recovery) and the ["uncontrollable"](https://github.com/caromc03/Smoker-s-Forward-Thinking/tree/main/Model/Model%20Recovery/Uncontrollable) condition are also available.  
 
 3.2 Update input and ouput directories (lines 6, 7) and run the script.
 
@@ -80,7 +80,7 @@ Download and install [SPM12](https://www.fil.ion.ucl.ac.uk/spm/software/download
 
 3.4 Open [accuracy_2step_IC.m](https://github.com/caromc03/Smoker-s-Forward-Thinking/blob/main/Model/Accuracy/accuracy_2step_IC.m) 
 
-3.5 Run script. The "ic" array structure generated incldues: 
+3.5 Run script. The "ic" array structure generated incldues:
 * **"accuracyRate"**: matching rates between actual data and simulated data
 * **"RESP"**: actual data 
 * **"Rsim"**: simulated data 
