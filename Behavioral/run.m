@@ -4,7 +4,7 @@ load beh02_clean
 
 %% 2. Output file
 outdir = '/Users/caro/Documents/MATLAB';
-outfile = 'Beh_Results.mat';
+outfile = 'Results.mat';
 
 %% 3. Summary of beh (M)
 nP = length(A);
