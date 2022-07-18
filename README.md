@@ -87,6 +87,8 @@ Download and install [SPM12](https://www.fil.ion.ucl.ac.uk/spm/software/download
 * **accuracyRate_mean**: mean accuracy rate across participants  
 
 ## 5. Neural Signals: Forward Projected Choice Values and Norm Prediction Error (Figure 4)
+Group-level contrast images are [available](https://github.com/caromc03/Smoker-s-Forward-Thinking/tree/main/fMRI/GLM%20files) Contact: carolinem2710@gmail.com for the raw/preprocessed individual fMRI images.
+
 ### *Event Regressors for Individual GLM*  
 * Open [event_v1.m](https://github.com/caromc03/Smoker-s-Forward-Thinking/blob/main/fMRI/event_v1.m) 
 * Load nicotine smokers' behavioral data [smok_beh.mat](https://github.com/caromc03/Smoker-s-Forward-Thinking/blob/main/Data/smok_beh.mat) or matched non-smokers' behavioral data [nonsmok_beh.mat](https://github.com/caromc03/Smoker-s-Forward-Thinking/blob/main/Data/nonsmok_beh.mat) (line 14) 
