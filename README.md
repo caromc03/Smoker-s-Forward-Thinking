@@ -25,16 +25,16 @@ Download and install [SPM12](https://www.fil.ion.ucl.ac.uk/spm/software/download
 1.4 "Results.mat" will be generated with the following variables: 
     * **"ID"**: Participant's ids 
     * **"Mname"**: Eight labels (strings) corresponding to each column pair in "M"
-            * The first column corresponds to the modified Ultimatum Game block ("controllable condition") 
-            * The second column corresponds to the typical Ultimatum Game block ("uncontrollable condition") 
+        * The first column corresponds to the modified Ultimatum Game block ("controllable condition") 
+        * The second column corresponds to the typical Ultimatum Game block ("uncontrollable condition") 
     * **"M"**: Behavioral measures for each participant, each row corresponds to a different participant in same order as "ID" 
-            * 'offer': Mean offer across the trials 
-            * 'rejR': Mean rejection rate
-            * 'rejR_L': Mean rejection rate for low offers ($1-3)
-            * 'rejR_M': Mean rejection rate for medium offers ($4-6)
-            * 'rejR_H': Mean rejection rate for high offers ($7-9)
-            * 'reward': Mean reward
-            * 'pc': Mean ratings of perceived controllability of the offers
+        * 'offer': Mean offer across the trials 
+        * 'rejR': Mean rejection rate
+        * 'rejR_L': Mean rejection rate for low offers ($1-3)
+        * 'rejR_M': Mean rejection rate for medium offers ($4-6)
+        * 'rejR_H': Mean rejection rate for high offers ($7-9)
+        * 'reward': Mean reward
+        * 'pc': Mean ratings of perceived controllability of the offers
     * **"M_mean"**: Mean behavioral measure across participants
     * **"M_std"**: Standard deviation for behavioral measures listed in "M" 
             
@@ -48,23 +48,23 @@ Download and install [SPM12](https://www.fil.ion.ucl.ac.uk/spm/software/download
  
  2.4 "ModelFit_IC_results" will be generated with the following: 
     * **"Model"**: List of models used 
-            * MF= Model-Free
-            * f0= 0-step 
-            * fD= 1-step
-            * f3= 2-step
-            * f4= 3-step
-            * f5= 4-step
+        * MF= Model-Free
+        * f0= 0-step 
+        * fD= 1-step
+        * f3= 2-step
+        * f4= 3-step
+        * f5= 4-step
     * **"BIC"**: BIC scores for each model 
-            * Columns corresponds to listed models 
-            * Rows correspond to each particiant		
+        * Columns corresponds to listed models 
+        * Rows correspond to each particiant		
     * **"freeName"**: Parameter names
     * **"freeID"**: Indicates which parameters are free (1) or not used/fixed (0)
-            * Columns correspond to parameters labeld in "freeName"
-            * Rows correspond to models used 		
+        * Columns correspond to parameters labeld in "freeName"
+        * Rows correspond to models used 		
     * **"param"**: Parameter estimates
-            * Columns correspond to each parameter listed in "freeName"
-            * Rows correspond to each participants
-            * The 3rd dimension corresponds each model
+        * Columns correspond to each parameter listed in "freeName"
+        * Rows correspond to each participants
+        * The 3rd dimension corresponds each model
             
 ## 3. Parameter Recovery and Accuracy 
 3.1 Open [recover_f3_IC](https://github.com/caromc03/Smoker-s-Forward-Thinking/blob/main/Model/Model%20Recovery/recover_MF_IC.m) for the 2-step model "controllable condition". Scripts for [other models](https://github.com/caromc03/Smoker-s-Forward-Thinking/tree/main/Model/Model%20Recovery) and the ["Uncontrollable"](https://github.com/caromc03/Smoker-s-Forward-Thinking/tree/main/Model/Model%20Recovery/Uncontrollable) condition are also available.  
