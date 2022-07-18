@@ -16,17 +16,17 @@ Download and install [SPM12](https://www.fil.ion.ucl.ac.uk/spm/software/download
 * Expected run time: Most scripts will take less than an hour to run. The longest scripts (Individual GLM on fMRI data & model fitting scripts) are expected to run for less than 2 days. 
 
 ## 1. Behavioral Results (Figure 2)
-1.1 Open ["run.m"](https://github.com/caromc03/Smoker-s-Forward-Thinking/blob/main/Behavioral/run.m)
+1.1 Open [run.m](https://github.com/caromc03/Smoker-s-Forward-Thinking/blob/main/Behavioral/run.m)
 
-1.2 Input nicotine smokers' behavioral data ["smok_beh.mat](https://github.com/caromc03/Smoker-s-Forward-Thinking/blob/main/Data/smok_beh.mat) or matched non-smokers' behavioral data ["nonsmok_beh.mat"](https://github.com/caromc03/Smoker-s-Forward-Thinking/blob/main/Data/nonsmok_beh.mat) (line 3)
+1.2 Input nicotine smokers' behavioral data [smok_beh.mat](https://github.com/caromc03/Smoker-s-Forward-Thinking/blob/main/Data/smok_beh.mat) or matched non-smokers' behavioral data [nonsmok_beh.mat](https://github.com/caromc03/Smoker-s-Forward-Thinking/blob/main/Data/nonsmok_beh.mat) (line 3)
 
 1.3 Update input and ouput directories (lines 6,7) and run the script. 
 
-1.4 "Results.mat" will be generated with the following variables: 
-* **"ID"**: Participant's ids 
+1.4 "Results.mat" will be generated with the following variables:
+* **"ID"**: Participants' ids 
 * **"Mname"**: Eight labels (strings) corresponding to each column pair in "M"
-    * The first column corresponds to the modified Ultimatum Game block ("controllable condition") 
-    * The second column corresponds to the typical Ultimatum Game block ("uncontrollable condition") 
+    * The first column corresponds to the modified UG block ("controllable" condition) 
+    * The second column corresponds to the typical UG block ("uncontrollable" condition) 
 * **"M"**: Behavioral measures for each participant, each row corresponds to a different participant in same order as "ID" 
     * 'offer': Mean offer across the trials 
     * 'rejR': Mean rejection rate
@@ -39,9 +39,9 @@ Download and install [SPM12](https://www.fil.ion.ucl.ac.uk/spm/software/download
 * **"M_std"**: Standard deviation for behavioral measures listed in "M" 
             
 ## 2. Model Fitting (Figure 3) 
- 2.1 Open ["ModelFit_IC_.m"](https://github.com/caromc03/Smoker-s-Forward-Thinking/blob/main/Model/ModelFit_IC.m) 
+ 2.1 Open [ModelFit_IC.m](https://github.com/caromc03/Smoker-s-Forward-Thinking/blob/main/Model/ModelFit_IC.m) 
  
- 2.2 Input nicotine smokers' behavioral data ["smok_beh.mat](https://github.com/caromc03/Smoker-s-Forward-Thinking/blob/main/Data/smok_beh.mat) or matched non-smokers' behavioral data ["nonsmok_beh.mat"](https://github.com/caromc03/Smoker-s-Forward-Thinking/blob/main/Data/nonsmok_beh.mat) (line 2)
+ 2.2 Input nicotine smokers' behavioral data [smok_beh.mat](https://github.com/caromc03/Smoker-s-Forward-Thinking/blob/main/Data/smok_beh.mat) or matched non-smokers' behavioral data [nonsmok_beh.mat](https://github.com/caromc03/Smoker-s-Forward-Thinking/blob/main/Data/nonsmok_beh.mat) (line 2)
  
  2.3 Update input and ouput directories (lines 17,20) and run the script. 
     * Models are found in in [LikelihoodFunctions](https://github.com/caromc03/Smoker-s-Forward-Thinking/tree/main/Model/LikelihoodFunctions) folder  
@@ -88,13 +88,13 @@ Download and install [SPM12](https://www.fil.ion.ucl.ac.uk/spm/software/download
 
 ## 5. Neural Signals: Forward Projected Choice Values and Norm Prediction Error (Figure 4)
 ### *Event Regressors for Individual GLM*  
-* Open ["event_v1.m"](https://github.com/caromc03/Smoker-s-Forward-Thinking/blob/main/fMRI/event_v1.m) 
-* Load nicotine smokers' behavioral data ["smok_beh.mat](https://github.com/caromc03/Smoker-s-Forward-Thinking/blob/main/Data/smok_beh.mat) or matched non-smokers' behavioral data ["nonsmok_beh.mat"](https://github.com/caromc03/Smoker-s-Forward-Thinking/blob/main/Data/nonsmok_beh.mat) (line 14) 
+* Open [event_v1.m](https://github.com/caromc03/Smoker-s-Forward-Thinking/blob/main/fMRI/event_v1.m) 
+* Load nicotine smokers' behavioral data [smok_beh.mat](https://github.com/caromc03/Smoker-s-Forward-Thinking/blob/main/Data/smok_beh.mat) or matched non-smokers' behavioral data [nonsmok_beh.mat](https://github.com/caromc03/Smoker-s-Forward-Thinking/blob/main/Data/nonsmok_beh.mat) (line 14) 
 * Update input and ouput directories (lines 3, 5) and run the script. 
 
 ### *Individual Parametric Modulators for Individual GLM* 
-* Open ["pmod_f2_nxV.m"](https://github.com/caromc03/Smoker-s-Forward-Thinking/blob/main/fMRI/pmod_f2_nxV.m) for choice values and ["pmod_normPE.m](https://github.com/caromc03/Smoker-s-Forward-Thinking/blob/main/fMRI/pmod_normPE.m) for norm PE
-* Load nicotine smokers' behavioral data ["smok_beh.mat](https://github.com/caromc03/Smoker-s-Forward-Thinking/blob/main/Data/smok_beh.mat) or matched non-smokers' behavioral data ["nonsmok_beh.mat"](https://github.com/caromc03/Smoker-s-Forward-Thinking/blob/main/Data/nonsmok_beh.mat) (line 21) 
+* Open [pmod_f2_nxV.m](https://github.com/caromc03/Smoker-s-Forward-Thinking/blob/main/fMRI/pmod_f2_nxV.m) for choice values and [pmod_normPE.m](https://github.com/caromc03/Smoker-s-Forward-Thinking/blob/main/fMRI/pmod_normPE.m) for norm PE
+* Load nicotine smokers' behavioral data [smok_beh.mat](https://github.com/caromc03/Smoker-s-Forward-Thinking/blob/main/Data/smok_beh.mat) or matched non-smokers' behavioral data [nonsmok_beh.mat](https://github.com/caromc03/Smoker-s-Forward-Thinking/blob/main/Data/nonsmok_beh.mat) (line 21) 
 * Load ModelFit_IC_results & ModelFit_NC_results.  
 * Update input and ouput directories and run the script.
 
@@ -109,6 +109,6 @@ Download and install [SPM12](https://www.fil.ion.ucl.ac.uk/spm/software/download
 * Run a one-way between-subject ANOVA test for the whole-brain map by updating and running [Group_ANOVA](https://github.com/caromc03/Smoker-s-Forward-Thinking/blob/main/fMRI/Group_ANOVA.m). 
 
 ### *Region of Interest* 
-* Create a vmPFC or midbrain ROI mask using ["makeROI_Feng](https://github.com/caromc03/Smoker-s-Forward-Thinking/blob/main/fMRI/makeROI_Feng.m). Update directories (lines 1,2) and input coordinate (line 11)
+* Create a vmPFC or midbrain ROI mask using [makeROI_Feng](https://github.com/caromc03/Smoker-s-Forward-Thinking/blob/main/fMRI/makeROI_Feng.m). Update directories (lines 1,2) and input coordinate (line 11)
 * Use marsbar toolbox to extract ROI coefficients. 
             
