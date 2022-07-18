@@ -38,7 +38,7 @@ Download and install [SPM12](https://www.fil.ion.ucl.ac.uk/spm/software/download
 * **"M_mean"**: Mean behavioral measure across participants
 * **"M_std"**: Standard deviation for behavioral measures listed in "M" 
             
-## 2. Model Fitting (Figure 3) 
+## 2. Model Fitting (Figure 3) (Table 2)
  2.1 Open [ModelFit_IC.m](https://github.com/caromc03/Smoker-s-Forward-Thinking/blob/main/Model/ModelFit_IC.m) 
  
  2.2 Input nicotine smokers' behavioral data [smok_beh.mat](https://github.com/caromc03/Smoker-s-Forward-Thinking/blob/main/Data/smok_beh.mat) or matched non-smokers' behavioral data [nonsmok_beh.mat](https://github.com/caromc03/Smoker-s-Forward-Thinking/blob/main/Data/nonsmok_beh.mat) (line 2)
@@ -66,7 +66,7 @@ Download and install [SPM12](https://www.fil.ion.ucl.ac.uk/spm/software/download
     * Rows correspond to each participants
     * The 3rd dimension corresponds each model
             
-## 3. Parameter Recovery and Accuracy 
+## 3. Parameter Recovery and Accuracy (Tables S2 & S3 )
 3.1 Open [recover_f3_IC](https://github.com/caromc03/Smoker-s-Forward-Thinking/blob/main/Model/Model%20Recovery/recover_MF_IC.m) for the 2-step model "controllable" condition. Scripts for [other models](https://github.com/caromc03/Smoker-s-Forward-Thinking/tree/main/Model/Model%20Recovery) and the ["uncontrollable"](https://github.com/caromc03/Smoker-s-Forward-Thinking/tree/main/Model/Model%20Recovery/Uncontrollable) condition are also available.  
 
 3.2 Update input and ouput directories (lines 6, 7) and run the script.
@@ -106,7 +106,7 @@ Download and install [SPM12](https://www.fil.ion.ucl.ac.uk/spm/software/download
 * Open [group_f2_nxV_2block_IC](https://github.com/caromc03/Smoker-s-Forward-Thinking/blob/main/fMRI/group_f2_nxV_2blocks_IC.m) for 2-step "controllable" condition. ["Uncontrollable"](https://github.com/caromc03/Smoker-s-Forward-Thinking/blob/main/fMRI/group_f2_nxV_2blocks_NC.m) condition script is also available
 * Update directories (lines 4-10) and run script 
 * The script will generate a one-sample t-test results for the chosen action value coefficients at the group level
-* Run a one-way between-subject ANOVA test for the whole-brain map by updating and running [Group_ANOVA](https://github.com/caromc03/Smoker-s-Forward-Thinking/blob/main/fMRI/Group_ANOVA.m). 
+* Run a one-way between-subject ANOVA test for the whole-brain map for smokers and non-smokers by updating and running [Group_ANOVA](https://github.com/caromc03/Smoker-s-Forward-Thinking/blob/main/fMRI/Group_ANOVA.m). 
 
 ### *Region of Interest* 
 * Create a vmPFC or midbrain ROI mask using [makeROI_Feng](https://github.com/caromc03/Smoker-s-Forward-Thinking/blob/main/fMRI/makeROI_Feng.m). Update directories (lines 1,2) and input coordinate (line 11)
