@@ -1,6 +1,6 @@
 
 % rawdata (beh matlab files)
-load beh02_clean 
+load smok_beh.mat 
 
 %% 2. Output file
 outdir = '/Users/caro/Documents/MATLAB';
