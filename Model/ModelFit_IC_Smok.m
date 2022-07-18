@@ -1,7 +1,5 @@
-
-
-%% load offer&resp data
-load beh02_clean.mat 
+%% Load raw data
+load smok_beh.mat 
 
 nP = length(A);
 OFFER = cell(nP,1);         % In control offers, responded trials only
@@ -20,7 +18,6 @@ addpath(genpath('/Users/caro/Documents/MATLAB/zipalldat/social_controllability_f
 
 % Where to save the results
 saveName = 'Modelfit_IC';
-
 
 %% Model setting
 Model = {'nRv_MF_t20_etaf'
@@ -51,7 +48,6 @@ L =1000+BIC;                         % Calculate Likelihoods
 X = zeros(nP, nX, nM);               % x (=free parameter) values returned by the optimization
 param = X;
 
-
 %% Free parameter starting points
 free0 = cell(nM,1);
 xIndex = cell(nM,1);
@@ -63,7 +59,6 @@ for m = 1:nM
 end  
 
 errorPoint = [0 0 0];  
-
 
 %% Model fitting
 options =optimset('TolFun',10^(-4),'TolX',10^(-4),'Largescale','off', ...
@@ -100,7 +95,6 @@ end
 param(:,1,:) = 20*param(:,1,:);             % temp
 param(:,3,:) = 20*param(:,3,:);             % norm0
 param(:,5,3:6) = 4*param(:,5,3:6)-2;        % delta
-
 
 %% Save the results
 c = clock;
