@@ -20,7 +20,7 @@ Download and install [SPM12](https://www.fil.ion.ucl.ac.uk/spm/software/download
 
 1.2 Input nicotine smokers' behavioral data [smok_beh.mat](https://github.com/caromc03/Smoker-s-Forward-Thinking/blob/main/Data/smok_beh.mat) or matched non-smokers' behavioral data [nonsmok_beh.mat](https://github.com/caromc03/Smoker-s-Forward-Thinking/blob/main/Data/nonsmok_beh.mat) (line 3)
 
-1.3 Update input and ouput directories (lines 6,7) and run the script. 
+1.3 Update input and output directories (lines 6,7) and run the script. 
 
 1.4 "Results.mat" will be generated with the following variables:
 * **"ID"**: Participants' ids 
@@ -43,7 +43,7 @@ Download and install [SPM12](https://www.fil.ion.ucl.ac.uk/spm/software/download
  
  2.2 Input nicotine smokers' behavioral data [smok_beh.mat](https://github.com/caromc03/Smoker-s-Forward-Thinking/blob/main/Data/smok_beh.mat) or matched non-smokers' behavioral data [nonsmok_beh.mat](https://github.com/caromc03/Smoker-s-Forward-Thinking/blob/main/Data/nonsmok_beh.mat) (line 2)
  
- 2.3 Update input and ouput directories (lines 17,20) and run the script.
+ 2.3 Update input and output directories (lines 17,20) and run the script.
  * Models are found in in [LikelihoodFunctions](https://github.com/caromc03/Smoker-s-Forward-Thinking/tree/main/Model/LikelihoodFunctions) folder  
  
  2.4 "ModelFit_IC_results" will be generated with the following: 
@@ -56,10 +56,10 @@ Download and install [SPM12](https://www.fil.ion.ucl.ac.uk/spm/software/download
     * f5= 4-step
 * **"BIC"**: BIC scores for each model 
     * Columns corresponds to listed models 
-    * Rows correspond to each particiant		
+    * Rows correspond to each participant		
 * **"freeName"**: Parameter names
 * **"freeID"**: Indicates which parameters are free (1) or not used/fixed (0)
-    * Columns correspond to parameters labeld in "freeName"
+    * Columns correspond to parameters labeled in "freeName"
     * Rows correspond to models used 		
 * **"param"**: Parameter estimates
     * Columns correspond to each parameter listed in "freeName"
@@ -69,18 +69,18 @@ Download and install [SPM12](https://www.fil.ion.ucl.ac.uk/spm/software/download
 ## 3. Parameter Recovery and Accuracy (Tables S2 & S3 )
 3.1 Open [recover_f3_IC](https://github.com/caromc03/Smoker-s-Forward-Thinking/blob/main/Model/Model%20Recovery/recover_MF_IC.m) for the 2-step model "controllable" condition. Scripts for [other models](https://github.com/caromc03/Smoker-s-Forward-Thinking/tree/main/Model/Model%20Recovery) and the ["uncontrollable"](https://github.com/caromc03/Smoker-s-Forward-Thinking/tree/main/Model/Model%20Recovery/Uncontrollable) condition are also available.  
 
-3.2 Update input and ouput directories (lines 6, 7) and run the script.
+3.2 Update input and output directories (lines 6, 7) and run the script.
 
 3.3. "recover_nRv_f3_cap2_t20_etaf_IC" will be generated with the following: 
 * **"param_tru"**: Parameters estimated from the real data and used to generate new set of simulated choice data 		
 * **"Rsim"**: Simulated choice data generated assuming "param_tru"
 * **"param_est"**: parameter estimates for the simulated data
-* **"R"**: correlation coeffcient between "param_tru" and "param_est"
+* **"R"**: correlation coefficient between "param_tru" and "param_est"
 * **"P"**: p-value for correlation between "param_tru" and "param_est"
 
 3.4 Open [accuracy_2step_IC.m](https://github.com/caromc03/Smoker-s-Forward-Thinking/blob/main/Model/Accuracy/accuracy_2step_IC.m) 
 
-3.5 Run script. The "ic" array structure generated incldues:
+3.5 Run script. The "ic" array structure generated includes:
 * **"accuracyRate"**: matching rates between actual data and simulated data
 * **"RESP"**: actual data 
 * **"Rsim"**: simulated data 
@@ -90,17 +90,17 @@ Download and install [SPM12](https://www.fil.ion.ucl.ac.uk/spm/software/download
 ### *Event Regressors for Individual GLM*  
 * Open [event_v1.m](https://github.com/caromc03/Smoker-s-Forward-Thinking/blob/main/fMRI/event_v1.m) 
 * Load nicotine smokers' behavioral data [smok_beh.mat](https://github.com/caromc03/Smoker-s-Forward-Thinking/blob/main/Data/smok_beh.mat) or matched non-smokers' behavioral data [nonsmok_beh.mat](https://github.com/caromc03/Smoker-s-Forward-Thinking/blob/main/Data/nonsmok_beh.mat) (line 14) 
-* Update input and ouput directories (lines 3, 5) and run the script. 
+* Update input and output directories (lines 3, 5) and run the script. 
 
 ### *Individual Parametric Modulators for Individual GLM* 
 * Open [pmod_f2_nxV.m](https://github.com/caromc03/Smoker-s-Forward-Thinking/blob/main/fMRI/pmod_f2_nxV.m) for choice values and [pmod_normPE.m](https://github.com/caromc03/Smoker-s-Forward-Thinking/blob/main/fMRI/pmod_normPE.m) for norm PE
 * Load nicotine smokers' behavioral data [smok_beh.mat](https://github.com/caromc03/Smoker-s-Forward-Thinking/blob/main/Data/smok_beh.mat) or matched non-smokers' behavioral data [nonsmok_beh.mat](https://github.com/caromc03/Smoker-s-Forward-Thinking/blob/main/Data/nonsmok_beh.mat) (line 21) 
 * Load ModelFit_IC_results & ModelFit_NC_results.  
-* Update input and ouput directories and run the script.
+* Update input and output directories and run the script.
 
 ### *Individual GLM* 
 * Open [indiv_f2_nxV_2blocks](https://github.com/caromc03/Smoker-s-Forward-Thinking/blob/main/fMRI/indiv_f2_nxV_2blocks.m) for choice values and [indiv_nNPE_2blocks.m](https://github.com/caromc03/Smoker-s-Forward-Thinking/blob/main/fMRI/indiv_nNPE_2blocks.m) for norm PE 
-* Update directoris (lines 3-6) and run script  
+* Update directories (lines 3-6) and run script  
 
 ### *Group GLM* 
 * Open [group_f2_nxV_2block_IC](https://github.com/caromc03/Smoker-s-Forward-Thinking/blob/main/fMRI/group_f2_nxV_2blocks_IC.m) for 2-step "controllable" condition. ["Uncontrollable"](https://github.com/caromc03/Smoker-s-Forward-Thinking/blob/main/fMRI/group_f2_nxV_2blocks_NC.m) condition script is also available
